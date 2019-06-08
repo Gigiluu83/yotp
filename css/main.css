@@ -1,0 +1,248 @@
+/*Elements Stylings*/
+header {
+	background-image: url("https://katysong.com/wp-content/uploads/2019/01/2019-year-of-the-pig.jpg");
+	background-size: 100px 100px;
+	font-size: 200px;
+	font-style: italic;
+	font-weight: bold;
+	border: 5px solid gray;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	
+}
+
+
+h2 {
+	color: green;
+	text-align: left;
+	text-decoration: underline;
+	transition: linear all 10s;
+	}
+
+	body {
+	color: firebrick;
+	font-family: 'Courier New', Courier, monospace;
+	font-display: bold;
+	font-style: italic;
+	background-color: lightgray;
+	
+}
+
+table,
+td {
+		border: 1px solid red;
+		border-style: dotted;
+		font-size: 20px;
+		font-family: fantasy;
+}
+
+thead,
+tfoot {
+    background-color: gray;
+		color: #fff;
+}
+
+
+/*****Classes Stylings******/
+.main-header {
+  font-family: Arial;
+	font-size: 50px;
+	color: blue;
+	padding-top: 130px;
+	text-align: center;
+	text-shadow: 4px 4px #ff0000;
+	animation-name: h1;	
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+footer {
+	background-color: gray;
+	padding: 0.5em 0;
+	margin: 1%;
+	position: bottom;
+	align: bottom;
+}
+
+
+
+
+
+.section-2,
+.section-3 {
+	color: green;
+	border: none;
+	padding: 5px;
+	padding-bottom: 30px;
+	width: 45%;
+	float: left;
+	margin: 5px;
+	font-family: cursive;
+	font-size: 20px;
+	position: relative;
+	overflow: auto;
+}
+/*Stylings for Menu Bar*/	
+.main-nav {
+	text-align: center; 
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	z-index: 10;
+	width: 100%;
+
+	/*Can separated to be in list order*/
+  display: inline-block;
+  font-size: 20px;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 5px;
+	font-size: 30px;
+	font-style: oblique;
+	font-stretch: condensed;
+	text-shadow: 3px 3px 3px red;
+	border: 2px solid red;
+	font-display: bold;
+	border-radius: 10px;
+  background-color: yellow;
+}
+
+.years {
+	border-color: red;
+	border-style: groove;
+}
+
+.images {
+	animation: 3s slidein infinite;
+	width: 40%;
+	height: 40%;
+}
+/*******Links Stylings******/
+a:link {
+	color: red;
+}
+	
+
+/*Animation Stylings*/
+@keyframes h1{
+	from {color: blue;}
+	to {color: orange;}
+}
+@keyframes slidein {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+	position: relative;
+	height: 300px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+
+.controls{
+	display: none;
+}
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+	font-size: 40px;
+	padding: 80px;
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+  
+  background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+/* https://images.pexels.com/photos/185941/pexels-photo-185941.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500*/
+.slide:nth-of-type(1){
+	background-color: red;
+  background-image: url('https://images.pexels.com/photos/185941/pexels-photo-185941.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500')
+}
+
+/* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
+.slide:nth-of-type(2){
+	background-color: orange;
+  background-image: url('https://cdn.pixabay.com/photo/2018/05/09/22/44/piglet-3386356_960_720.jpg');
+}
+
+/* https://images.pexels.com/photos/66258/staniel-cay-swimming-pig-seagull-fish-66258.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500*/
+.slide:nth-of-type(3){
+	background-color: green;
+  background-image: url('https://images.pexels.com/photos/66258/staniel-cay-swimming-pig-seagull-fish-66258.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500');
+}
+
+/*https://cdn.pixabay.com/photo/2018/10/12/10/31/piglet-3741880__340.jpg*/
+.slide:nth-of-type(4){
+	background-color: rebeccapurple;
+	background-image: url('https://cdn.pixabay.com/photo/2018/10/12/10/31/piglet-3741880__340.jpg')
+}
+
+
+.controls{
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 20px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: 10px 0px 0px 10px;
+  width: 70px;
+}
+
+.controls:hover,
+.controls:focus{
+  background: #eee;
+  color: #333;
+}
+
+.container{
+  position: relative;
+}
+
+.buttons{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  font-size: 0px;
+}
