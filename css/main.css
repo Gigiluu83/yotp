@@ -11,6 +11,13 @@ header {
 	
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	
+}
+
 
 h2 {
 	color: green;
@@ -59,28 +66,27 @@ footer {
 	background-color: gray;
 	padding: 0.5em 0;
 	margin: 1%;
-	position: bottom;
-	align: bottom;
+	flex: 1;
+	text-align: center;
 }
 
 
+.container {
+	display: flex;
+	height: auto;
+	flex-direction: row;
+}
 
 
-
-.section-2,
-.section-3 {
+.section-2{
 	color: green;
 	border: none;
 	padding: 5px;
-	padding-bottom: 30px;
-	width: 45%;
-	float: left;
-	margin: 5px;
 	font-family: cursive;
 	font-size: 20px;
-	position: relative;
-	overflow: auto;
 }
+
+
 /*Stylings for Menu Bar*/	
 .main-nav {
 	text-align: center; 
